@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8">
+  <title>Urban Scaling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+ <script type="text/javascript">
+ window.onload = function() {
+    document.getElementById('ifYes').style.display = 'none';
+    document.getElementById('ifNo').style.display = 'none';
+    document.getElementByID('ifCrime').style.display = 'none';
+}
+function yesnoCheck() {
+    if (document.getElementById('yesCheck').checked) {
+        document.getElementById('ifYes').style.display = 'block';
+        document.getElementById('ifNo').style.display = 'none';
+        document.getElementById('ifCrime').style.display = 'none';
+        document.getElementById('aix1').style.display = 'none';
+    } 
+    else if(document.getElementById('noCheck').checked) {
+        document.getElementById('ifNo').style.display = 'block';
+        document.getElementById('ifYes').style.display = 'none';
+        document.getElementById('ifCrime').style.display = 'none';
+        document.getElementById('aix1').style.display = 'none';
+   }
+  else if(document.getElementById('crime').checked) {
+      document.getElementById('ifCrime').style.display = 'block';
+      document.getElementById('ifNo').style.display= 'none';
+      document.getElementById('ifYes').style.dispaly = 'none';
+  }
+}
+
+</script>
+</head>
+<body>
+  <h1>Urban Scaling in Milwaukee</h1>
+<p>Based on research done at the Santa Fe Institute, this program calculates how population effects indicators</p>
+  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck">Housing</input>
+  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">Employment</input>
+  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="crime">Crime</input>
+<br>
+<div id="ifYes" style="display:none">
+  <p>Housing should increase linearly with population</p>
+  <p>Data suggests that in 2031, the population in Milwaukee will be</p>
+  <p>Therefore, there will be blank housing units to accomadate everyone</p>
+</div>
+<div id="ifNo" style="display:none">
+  Employment indicates
+</div>
+<div id="ifCrime" style="display:none">
+  Crime indicates
+</div>
+</body>
+  
+</html>

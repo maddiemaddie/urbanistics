@@ -1,0 +1,22 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body {
+  background-image: url("https://wallpapercave.com/wp/wp2181752.jpg");
+  color: #ffffff;
+  font-family: sans-serif;
+  left-margin: 20%;
+  font-size: 1.2em;
+  margin: 60px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+  font-style: bold;
+}
