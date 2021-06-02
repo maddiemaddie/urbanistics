@@ -1,28 +1,29 @@
-@media all and (min-width:551px) {
-  body { margin: 100px;};
-  footer {
+footer {
   font-size: .9em;
   position: fixed;
   bottom: 5%;
   width: 100%;
   left: 40%;
-};
-    .desktop-br {display: inline;};
-    .mobile-br {display: none;};
+}
+
+@media all and (min-width:551px) {
+  body { margin: 100px;}
+    .desktop-br {display: inline;}
+    .mobile-br {display: none;}
 }
 @media all and (max-width:550px) {
   body {
     margin: 50px;
-  };
+  }
   footer {
   font-size: .9em;
     position: relative;
     width: 100%;
     bottom: 25%;
-};
+}
     .desktop-br {display: none;}
     .mobile-br {display: inline;}
-  .radio {display: block;};
+  .radio {display: block;}
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
