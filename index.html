@@ -38,27 +38,28 @@ function yesnoCheck() {
 </script>
 </head>
 <body>
-  <h1>Urban Scaling in Milwaukee</h1>
+  <h1 style="font-family: 'Trebuchet MS', sans-serif;">Urban Scaling in Milwaukee</h1>
 <p>Based on research done at the Santa Fe Institute, this program calculates the effect population has on certain indicators. Assuming infrastructure scales sublinearly, individual needs scale linearly, and technology scales superlinearly, certain predictions can be made.</p>
   <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck">Housing</input>
   <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">Employment</input>
-  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="crime">Crime</input>
+  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="crime">Median Household Income</input>
 <br>
 <div id="ifYes" style="display:none">
-  <p>Housing should increase linearly with population</p>
-  <p>Data suggests that in 2031, the population in Milwaukee will be</p>
-  <p>Therefore, there will be blank housing units to accomodate everyone</p>
+  <p>Housing should increase <strong>linearly</strong> with population</p>
+  <p>Data suggests that in 2031, the population in Milwaukee will be <strong>668,735</strong> people</p>
+  <p>Therefore, there will need to be <strong>293,749</strong> housing units to accomodate everyone</p>
 </div>
 <div id="ifNo" style="display:none">
-  <p>Employment should increase linearly with population</p>
-  <p>Data suggests that in 2031, the population in Milwaukee will be</p>
-  <p>Therefore, there will be blank jobs to accomodate everyone</p>
+  <p>Employment should increase <strong>linearly</strong> with population</p>
+    <p>Data suggests that in 2031, the population in Milwaukee will be <strong>668,735</strong> people</p>
+  <p>Therefore, there will need to be <strong>372,422</strong> jobs to accomodate everyone</p>
 </div>
 <div id="ifCrime" style="display:none">
-  <p>Crime should increase linearly with population</p>
-  <p>Data suggests that in 2031, the population in Milwaukee will be</p>
-  <p>Therefore, there will be blank instances of crime</p>
+  <p>Median household income should increase <strong>superlinearly</strong> with population</p>
+  <p>Data suggests that in 2031, the population in Milwaukee will be <strong>668,735</strong> people</p>
+  <p>Therefore, median household income will be <strong>$53,472</strong></p>
 </div>
+<footer><a href="about.html">Learn More<a/> | Urbanistics &copy 2021</footer>
 </body>
   
 </html>
