@@ -42,7 +42,7 @@ function yesnoCheck() {
 <p>Based on research done at the Santa Fe Institute, this program calculates the effect population has on certain indicators. Assuming infrastructure scales sublinearly, individual needs scale linearly, and technology scales superlinearly, certain predictions can be made.</p>
   <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck">Housing</input>
   <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="noCheck">Employment</input>
-  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="crime">Crime</input>
+  <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" id="crime">Total Wages</input>
 <br>
 <div id="ifYes" style="display:none">
   <p>Housing should increase <strong>linearly</strong> with population</p>
@@ -55,9 +55,9 @@ function yesnoCheck() {
   <p>Therefore, there will need to be <strong>372,422</strong> jobs to accomodate everyone</p>
 </div>
 <div id="ifCrime" style="display:none">
-  <p>Crime should increase <strong>linearly</strong> with population</p>
+  <p>Total wages should increase <strong>superlinearly</strong> with population</p>
   <p>Data suggests that in 2031, the population in Milwaukee will be <strong>668,735</strong> people</p>
-  <p>Therefore, there will be blank instances of crime</p>
+  <p>Therefore, total wages will be $17,328,144</p>
 </div>
 <footer><a href="about.html">Learn More<a/> | Urbanistics &copy 2021</footer>
 </body>
